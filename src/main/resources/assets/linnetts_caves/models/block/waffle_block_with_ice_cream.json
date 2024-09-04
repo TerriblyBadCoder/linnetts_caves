@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "linnetts_caves:block/waffle_block",
+    "top": "linnetts_caves:block/pistachio_icecream_block",
+    "side": "linnetts_caves:block/waffle_block_with_icecream",
+    "overlay": "linnetts_caves:block/waffle_block_with_icecream",
+    "particle": "linnetts_caves:block/waffle_block"
+  },
+  "render_type": "cutout_mipped"
+}

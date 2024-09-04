@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "linnetts_caves:block/chocolate_dough_slab"
+    },
+    "type=top": {
+      "model": "linnetts_caves:block/chocolate_dough_slab_top"
+    },
+    "type=double": {
+      "model": "linnetts_caves:block/chocolate_dough_slab_full"
+    }
+  }
+}

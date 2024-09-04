@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "linnetts_caves:block/fizzy_stick",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "linnetts_caves:block/fizzy_stick",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "linnetts_caves:block/fizzy_stick",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "linnetts_caves:block/fizzy_stick",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "linnetts_caves:block/fizzy_stick"
+    },
+    "facing=west": {
+      "model": "linnetts_caves:block/fizzy_stick",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

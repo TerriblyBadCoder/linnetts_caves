@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "linnetts_caves:block/red_jelly_down_t",
+    "top": "linnetts_caves:block/red_jelly_up_t",
+    "side": "linnetts_caves:block/red_jelly_side_t",
+    "overlay": "linnetts_caves:block/red_jelly_side_t",
+    "particle": "linnetts_caves:block/red_jelly_down_t"
+  },
+  "render_type": "translucent"
+}

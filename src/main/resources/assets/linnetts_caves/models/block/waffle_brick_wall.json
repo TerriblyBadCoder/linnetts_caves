@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "linnetts_caves:block/waffle_brick",
+    "particle": "linnetts_caves:block/waffle_brick"
+  },
+  "render_type": "solid"
+}

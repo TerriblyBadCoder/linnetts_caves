@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "linnetts_caves:block/chocolate_dough_block",
+    "top": "linnetts_caves:block/chocolate_dough_block",
+    "side": "linnetts_caves:block/chocolate_dough_block"
+  },
+  "render_type": "cutout_mipped"
+}

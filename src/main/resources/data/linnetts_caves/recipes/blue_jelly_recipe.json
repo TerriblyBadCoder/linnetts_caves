@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "linnetts_caves:blue_jelly"
+    }
+  },
+  "result": {
+    "item": "linnetts_caves:blue_jelly_block",
+    "count": 1
+  }
+}

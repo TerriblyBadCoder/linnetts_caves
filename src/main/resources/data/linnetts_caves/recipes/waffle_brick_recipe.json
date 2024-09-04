@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "linnetts_caves:waffle_block"
+    }
+  },
+  "result": {
+    "item": "linnetts_caves:waffle_brick",
+    "count": 4
+  }
+}

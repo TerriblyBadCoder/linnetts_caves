@@ -1,0 +1,9 @@
+{
+  "parent": "linnetts_caves:custom/exploding_cherry",
+  "textures": {
+    "all": "linnetts_caves:block/exploding_cherry",
+    "particle": "linnetts_caves:block/exploding_cherry",
+    "0": "linnetts_caves:block/exploding_cherry"
+  },
+  "render_type": "cutout"
+}

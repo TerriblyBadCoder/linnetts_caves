@@ -1,0 +1,9 @@
+{
+  "parent": "linnetts_caves:custom/fizzy_stick",
+  "textures": {
+    "all": "linnetts_caves:block/fizzy_stick",
+    "particle": "linnetts_caves:block/fizzy_stick",
+    "0": "linnetts_caves:block/fizzy_stick"
+  },
+  "render_type": "solid"
+}

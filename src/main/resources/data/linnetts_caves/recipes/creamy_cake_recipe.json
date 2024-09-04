@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "bb"
+  ],
+  "key": {
+    "a": {
+      "item": "linnetts_caves:biscuit_with_vanilla_cream_block"
+    },
+    "b": {
+      "item": "linnetts_caves:biscuit_with_strawberry_cream_block"
+    }
+  },
+  "result": {
+    "item": "linnetts_caves:creamy_cake",
+    "count": 1
+  }
+}

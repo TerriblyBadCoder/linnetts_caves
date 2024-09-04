@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.linnettmodia.linnetts_caves.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "linnetts_caves.refmap.json",
+  "mixins": [
+    "FlintAndSteelItemMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

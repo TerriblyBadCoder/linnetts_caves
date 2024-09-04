@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "linnetts_caves:item/chocolate_growths"
+  },
+  "render_type": "translucent"
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "linnetts_caves:blocks/waffle_brick_wall",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "linnetts_caves:waffle_brick_wall"
+        }
+      ]
+    }
+  ]
+}

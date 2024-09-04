@@ -1,0 +1,9 @@
+{
+  "parent": "linnetts_caves:custom/pink_party_candle",
+  "textures": {
+    "all": "linnetts_caves:block/pink_party_candle",
+    "particle": "linnetts_caves:block/pink_party_candle",
+    "0": "linnetts_caves:block/pink_party_candle"
+  },
+  "render_type": "cutout"
+}

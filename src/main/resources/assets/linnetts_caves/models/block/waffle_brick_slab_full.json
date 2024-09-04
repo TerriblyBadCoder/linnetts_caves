@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "linnetts_caves:block/waffle_brick",
+    "top": "linnetts_caves:block/waffle_brick",
+    "side": "linnetts_caves:block/waffle_brick"
+  },
+  "render_type": "solid"
+}

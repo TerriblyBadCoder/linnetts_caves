@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "linnetts_caves:jelly"
+    },
+    {
+      "item": "linnetts_caves:jelly"
+    },
+    {
+      "item": "linnetts_caves:jelly"
+    },
+    {
+      "item": "linnetts_caves:jelly"
+    },
+    {
+      "item": "linnetts_caves:jelly"
+    },
+    {
+      "item": "linnetts_caves:jelly"
+    },
+    {
+      "item": "linnetts_caves:jelly"
+    },
+    {
+      "item": "linnetts_caves:jelly"
+    },
+    {
+      "item": "linnetts_caves:jelly"
+    }
+  ],
+  "result": {
+    "item": "linnetts_caves:jelly_block",
+    "count": 1
+  }
+}

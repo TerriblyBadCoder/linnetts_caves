@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "linnetts_caves:blocks/chocolate_dough_wall",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "linnetts_caves:chocolate_dough_wall"
+        }
+      ]
+    }
+  ]
+}

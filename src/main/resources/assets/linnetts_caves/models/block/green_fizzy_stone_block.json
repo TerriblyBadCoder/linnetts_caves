@@ -1,0 +1,9 @@
+{
+  "parent": "linnetts_caves:custom/fizzy_stone",
+  "textures": {
+    "all": "linnetts_caves:block/green_fizzy_stone",
+    "particle": "linnetts_caves:block/green_fizzy_break",
+    "0": "linnetts_caves:block/green_fizzy_stone"
+  },
+  "render_type": "cutout"
+}

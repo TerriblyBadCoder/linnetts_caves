@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "linnetts_caves:fizzy_stone"
+    }
+  },
+  "result": {
+    "item": "linnetts_caves:fizzy_stick",
+    "count": 1
+  }
+}

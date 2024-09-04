@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "linnetts_caves:block/vanilla_cream_block",
+    "particle": "linnetts_caves:block/vanilla_cream_block"
+  },
+  "render_type": "solid"
+}

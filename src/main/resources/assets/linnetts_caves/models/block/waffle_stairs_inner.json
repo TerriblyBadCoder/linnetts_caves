@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "linnetts_caves:block/waffle_block",
+    "top": "linnetts_caves:block/waffle_block",
+    "side": "linnetts_caves:block/waffle_block"
+  },
+  "render_type": "solid"
+}

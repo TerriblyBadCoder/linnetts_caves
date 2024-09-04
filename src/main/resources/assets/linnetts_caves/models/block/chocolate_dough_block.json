@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "linnetts_caves:block/chocolate_dough_block",
+    "particle": "linnetts_caves:block/chocolate_dough_block"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "piece_of_cake": {
+    "sounds": [
+      {
+        "name": "linnetts_caves:piece-of-cake",
+        "stream": true
+      }
+    ]
+  },
+  "caramelization": {
+    "subtitle": "subtitles.caramelization",
+    "sounds": [
+      {
+        "name": "linnetts_caves:caramelization",
+        "stream": true
+      }
+    ]
+  },
+  "jelly_block_place": {
+    "sounds": [
+      {
+        "name": "linnetts_caves:jelly_block_place",
+        "stream": false
+      }
+    ]
+  },
+  "jelly_block_break": {
+    "sounds": [
+      {
+        "name": "linnetts_caves:jelly_block_break",
+        "stream": false
+      }
+    ]
+  }
+}
