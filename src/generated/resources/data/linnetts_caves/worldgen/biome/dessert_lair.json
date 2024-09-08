@@ -2,23 +2,22 @@
   "carvers": {
     "air": [
       "minecraft:cave",
-      "minecraft:cave_extra_underground",
       "minecraft:canyon"
     ]
   },
   "downfall": 0.8,
   "effects": {
-    "fog_color": 13282197,
-    "grass_color": 11922849,
+    "fog_color": 16777215,
+    "grass_color": 22099141,
     "music": {
       "max_delay": 24000,
       "min_delay": 12000,
       "replace_current_music": false,
       "sound": "minecraft:music.overworld.dripstone_caves"
     },
-    "sky_color": 248163221,
-    "water_color": 10605549,
-    "water_fog_color": 13282197
+    "sky_color": 167136111,
+    "water_color": 16777215,
+    "water_fog_color": 16777215
   },
   "features": [
     [],
@@ -43,8 +42,8 @@
     "monster": [
       {
         "type": "linnetts_caves:jelly_zombie",
-        "maxCount": 3,
-        "minCount": 2,
+        "maxCount": 2,
+        "minCount": 1,
         "weight": 40
       }
     ],

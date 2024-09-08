@@ -1,32 +1,25 @@
 {
   "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
-      "unlock_right_away": "2024-08-30 18:20:06 +0300"
+      "unlock_right_away": "2024-09-07 00:08:12 +0300"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:taiga": "2024-08-30 18:49:49 +0300",
-      "minecraft:eroded_badlands": "2024-08-30 18:52:11 +0300",
-      "minecraft:birch_forest": "2024-08-30 18:20:07 +0300",
-      "minecraft:savanna_plateau": "2024-08-30 18:35:22 +0300",
-      "minecraft:river": "2024-08-30 18:32:47 +0300",
-      "minecraft:stony_shore": "2024-08-30 18:37:57 +0300",
-      "minecraft:dripstone_caves": "2024-08-30 18:24:29 +0300",
-      "minecraft:grove": "2024-08-30 18:41:56 +0300",
-      "minecraft:forest": "2024-08-30 18:21:23 +0300",
-      "minecraft:lush_caves": "2024-08-30 18:36:55 +0300",
-      "minecraft:deep_cold_ocean": "2024-08-30 18:43:53 +0300",
-      "minecraft:ice_spikes": "2024-08-30 18:34:52 +0300",
-      "minecraft:jungle": "2024-08-30 18:42:34 +0300",
-      "minecraft:snowy_beach": "2024-08-30 18:40:57 +0300",
-      "minecraft:warm_ocean": "2024-08-30 18:20:19 +0300",
-      "minecraft:deep_dark": "2024-08-30 18:21:33 +0300",
-      "minecraft:savanna": "2024-08-30 18:32:44 +0300",
-      "minecraft:plains": "2024-08-30 18:32:16 +0300"
+      "minecraft:lukewarm_ocean": "2024-09-07 00:09:54 +0300",
+      "minecraft:stony_shore": "2024-09-07 00:09:57 +0300",
+      "minecraft:forest": "2024-09-07 00:10:00 +0300",
+      "minecraft:savanna": "2024-09-07 00:08:48 +0300",
+      "minecraft:plains": "2024-09-07 00:08:13 +0300"
     },
     "done": false
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2024-09-07 00:08:34 +0300"
+    },
+    "done": true
   },
   "DataVersion": 3465
 }

@@ -73,11 +73,11 @@ public class DessertLairStructurePiece  extends AbstractCaveGenerationStructureP
     }
 
     private boolean inCircle(BlockPos.MutableBlockPos carve) {
-        float pillarNoise = (LCmath.sampleNoise3D(carve.getX(), (int) (carve.getY() * 0.4F), carve.getZ(), 50) + 1.0F) * 0.5F;
-        float verticalNoise = (LCmath.sampleNoise2D(carve.getX(), carve.getZ(), 50) + 1.0F) * 0.2F - (LCmath.smin(LCmath.sampleNoise2D(carve.getX(), carve.getZ(), 24), -0.5F, 0.1F) + 0.5F) * 0.7F;
+        float pillarNoise = (LCmath.sampleNoise3D(carve.getX(), (int) (carve.getY() * 0.4F), carve.getZ(), 500) + 1.0F) * 0.5F;
+        float verticalNoise = (LCmath.sampleNoise2D(carve.getX(), carve.getZ(), 800) + 1.0F) * 0.2F - (LCmath.smin(LCmath.sampleNoise2D(carve.getX(), carve.getZ(), 100), -0.5F, 0.1F) + 0.5F) * 0.7F;
         double distToCenter = carve.distToLowCornerSqr(this.holeCenter.getX(), carve.getY(), this.holeCenter.getZ());
         float f = getHeightOf(carve);
-        float f1 = (float) Math.pow(canyonStep(f, 5), 2.5F);
+        float f1 = (float) Math.pow(canyonStep(f, 6), 2.5F);
         float rawHeight = Math.abs(this.holeCenter.getY() - carve.getY()) / (float) (height * 0.5F);
         float reverseRawHeight = 1F - rawHeight;
         double yDist = LCmath.smin((float) Math.pow(reverseRawHeight, 0.3F), 1.0F, 0.1F);
