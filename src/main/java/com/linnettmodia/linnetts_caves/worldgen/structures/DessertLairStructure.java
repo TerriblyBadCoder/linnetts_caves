@@ -30,12 +30,12 @@ public class DessertLairStructure extends AbstractCaveGenerationStructure{
 
     @Override
     public int getWidthRadius(WorldgenRandom random) {
-        return 100;
+        return 150;
     }
 
     @Override
     public int getHeightRadius(WorldgenRandom random, int seaLevel) {
-        return 90;
+        return 100;
     }
 
     @Override
