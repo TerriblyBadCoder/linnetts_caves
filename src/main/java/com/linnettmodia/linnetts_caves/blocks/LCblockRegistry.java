@@ -65,6 +65,8 @@ public class LCblockRegistry {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SNOW_BLOCK).mapColor(MapColor.COLOR_RED)));
     public static final RegistryObject<Block> VANILLA_CREAM_BLOCK = registerBlock("vanilla_cream_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SNOW_BLOCK).mapColor(MapColor.TERRACOTTA_WHITE)));
+    public static final RegistryObject<Block> YOGHURT_BLOCK = registerBlock("yoghurt_block",
+            () -> new YoghurtBlock(BlockBehaviour.Properties.copy(Blocks.SNOW_BLOCK).mapColor(MapColor.TERRACOTTA_WHITE)));
     public static final RegistryObject<Block> CHOCOLATE_DOUGH_BLOCK = registerBlock("chocolate_dough_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.TERRACOTTA_BROWN)));
     public static final RegistryObject<Block> CHOCOLATE_DOUGH_SLAB = registerBlock("chocolate_dough_slab",

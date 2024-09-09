@@ -12,11 +12,13 @@ import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.Vec3;
 import org.joml.Vector3f;
 
@@ -34,6 +36,14 @@ public class FizzyShardEntity extends ThrowableItemProjectile {
     protected Item getDefaultItem() {
         return Items.APPLE;
     }
+
+    @Override
+    protected void onHitEntity(EntityHitResult p_37259_) {
+        super.onHitEntity(p_37259_);
+        p_37259_.getEntity().hurt(this.damageSources().stalagmite(),3);
+        this.discard();
+    }
+
     public Vec3 getTrailPosition(int pointer, float partialTick) {
         if (this.isRemoved()) {
             partialTick = 1.0F;
