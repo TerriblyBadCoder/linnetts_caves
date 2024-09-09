@@ -29,5 +29,30 @@ public class ClientEvents {
             return LCBiomeSampler.sampleBiomesFloat(player.level(), player.position(), LCbiomesRegistry::getBiomeAmbientLight);
         }
     }
-
+    @SubscribeEvent(priority = EventPriority.LOWEST)
+    public void fogRender(ViewportEvent.RenderFog event) {
+        if (event.isCanceled()) {
+            return;
+        }
+        Entity player = Minecraft.getInstance().getCameraEntity();
+        BlockState blockState = player.level().getBlockState(event.getCamera().getBlockPosition());
+        if (blockState.getBlock() == LCblockRegistry.YOGHURT_BLOCK.get()) {
+            event.setCanceled(true);
+            float farness = 1.8F;
+            event.setFarPlaneDistance(farness);
+            event.setNearPlaneDistance(0.56F);
+            return;
+        }
+    }
+    @SubscribeEvent(priority = EventPriority.LOWEST)
+    public void fogColor(ViewportEvent.ComputeFogColor event) {
+        Entity player = Minecraft.getInstance().getCameraEntity();
+        FluidState fluidstate = player.level().getFluidState(event.getCamera().getBlockPosition());
+        BlockState blockState = player.level().getBlockState(event.getCamera().getBlockPosition());
+        if (blockState.getBlock() == LCblockRegistry.YOGHURT_BLOCK.get()) {
+            event.setBlue(0.8f);
+            event.setGreen(0.8f);
+            event.setRed(1f);
+        }
+    }
 }
