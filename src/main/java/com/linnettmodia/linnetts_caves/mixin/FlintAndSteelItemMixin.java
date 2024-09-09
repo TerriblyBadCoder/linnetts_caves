@@ -24,6 +24,8 @@ public class FlintAndSteelItemMixin {
         {
             cir.setReturnValue(InteractionResult.sidedSuccess($$2.isClientSide));
             cir.cancel();
+
         }
     }
 }
+

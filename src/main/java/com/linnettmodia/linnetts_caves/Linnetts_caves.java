@@ -5,6 +5,8 @@ import com.linnettmodia.linnetts_caves.entity.LCentityRegistry;
 import com.linnettmodia.linnetts_caves.events.ClientEvents;
 import com.linnettmodia.linnetts_caves.events.EntityEvents;
 import com.linnettmodia.linnetts_caves.items.LCitemRegistry;
+import com.linnettmodia.linnetts_caves.misc.ClientProxy;
+import com.linnettmodia.linnetts_caves.misc.CommonProxy;
 import com.linnettmodia.linnetts_caves.misc.LCreativeModTabsRegistry;
 import com.linnettmodia.linnetts_caves.networking.ModMessages;
 import com.linnettmodia.linnetts_caves.particles.LCparticleRegistry;
@@ -32,6 +34,7 @@ import net.minecraftforge.event.entity.SpawnPlacementRegisterEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -48,7 +51,7 @@ public class Linnetts_caves {
 
 
     public static final String MODID = "linnetts_caves";
-
+    public static CommonProxy proxy =DistExecutor.runForDist(()-> ClientProxy::new, ()-> CommonProxy::new);
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public Linnetts_caves() {
@@ -63,11 +66,15 @@ public class Linnetts_caves {
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::newEntityAttributes);
         modEventBus.addListener(this::spawnPlacements);
+        modEventBus.addListener(this::clientSetup);
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.register(new EntityEvents());
         MinecraftForge.EVENT_BUS.register(new ClientEvents());
     }
 
+    private void clientSetup(final FMLClientSetupEvent event) {
+        event.enqueueWork(() -> proxy.clientInit());
+    }
     private void commonSetup(final FMLCommonSetupEvent event) {
         ModMessages.register();
         event.enqueueWork(()-> {

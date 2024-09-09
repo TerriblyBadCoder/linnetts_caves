@@ -5,7 +5,8 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "linnetts_caves.refmap.json",
   "mixins": [
-    "FlintAndSteelItemMixin"
+    "FlintAndSteelItemMixin",
+    "LightTextureMixin"
   ],
   "client": [
   ],

@@ -3,6 +3,7 @@ package com.linnettmodia.linnetts_caves.worldgen.biome;
 
 import com.linnettmodia.linnetts_caves.Linnetts_caves;
 import com.linnettmodia.linnetts_caves.entity.LCentityRegistry;
+import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import net.minecraft.data.worldgen.BootstapContext;
@@ -24,6 +25,14 @@ public class LCbiomesRegistry {
     {
         context.register(DESSERT_LAIR, dessert_lair(context));
     }
+
+    public static float getBiomeAmbientLight(Holder<Biome> value) {
+        if (value.is(DESSERT_LAIR)) {
+            return 0.300F;
+        }
+        return 0.0F;
+    }
+
     public static void globalOverworldGeneration(BiomeGenerationSettings.Builder builder) {
 
         BiomeDefaultFeatures.addDefaultCrystalFormations(builder);
